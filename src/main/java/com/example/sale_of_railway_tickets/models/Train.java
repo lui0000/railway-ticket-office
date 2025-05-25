@@ -1,5 +1,6 @@
 package com.example.sale_of_railway_tickets.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 
@@ -8,9 +9,9 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 
-
-@Document(collection = "trains")
 @Builder
+@JsonIgnoreProperties()
+@Document(collection = "trains")
 public class Train {
 
     @Id

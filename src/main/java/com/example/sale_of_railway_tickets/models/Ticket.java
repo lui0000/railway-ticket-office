@@ -1,5 +1,6 @@
 package com.example.sale_of_railway_tickets.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,8 +11,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.time.LocalDateTime;
 
 
-@Document(collection = "tickets")
 @Builder
+@JsonIgnoreProperties()
+@Document(collection = "tickets")
 public class Ticket {
     @Id
     private String id;
