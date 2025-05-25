@@ -1,0 +1,13 @@
+package com.example.sale_of_railway_tickets;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SaleOfRailwayTicketsApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SaleOfRailwayTicketsApplication.class, args);
+	}
+
+}
