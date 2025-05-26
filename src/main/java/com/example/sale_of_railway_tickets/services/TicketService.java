@@ -15,7 +15,6 @@ public class TicketService {
     }
 
     public Ticket bookTicket(Ticket ticket) {
-        // здесь можно добавить логику проверки наличия мест, цены и т.п.
         return repo.save(ticket);
     }
 
