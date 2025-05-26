@@ -15,7 +15,6 @@ public class TrainService {
     }
 
     public Train create(Train train) {
-        // можно добавить проверку unique number
         return repo.save(train);
     }
 

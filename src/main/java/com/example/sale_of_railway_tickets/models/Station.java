@@ -10,7 +10,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Builder
-@JsonIgnoreProperties()
+@JsonIgnoreProperties(ignoreUnknown = true)
 @Document(collection = "stations")
 public class Station {
     @Id
